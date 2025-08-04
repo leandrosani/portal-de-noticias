@@ -1,0 +1,17 @@
+nav { 
+  margin-inline: 32px;
+}
+
+.nav1, .nav2 {
+ display: flex;
+ justify-content: space-between; 
+}
+
+.nav1 {
+  padding-block: 20px;
+}
+
+.nav2 {
+  padding-block: 14px;
+  border-block: 1px solid var(--stroke-color);
+}
