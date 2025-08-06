@@ -1,0 +1,45 @@
+#section2 {
+  display: flex;
+  flex-direction: column;
+  margin-block: 90px;
+  border-top: 1px solid var(--stroke-color);
+}
+
+.header-section2 {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 32px
+}
+
+.news {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+  height: 234px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  div {
+    position: relative
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h2 {
+      position: absolute;
+      font: 800 15px/140% "Archivo", sans-serif;
+      margin-top: 16px;
+  }
+
+  span {
+    position: absolute;
+    top: 0;
+  }
+}
+
+.figure-news {
+
+}
