@@ -1,17 +1,25 @@
-nav { 
-  margin-inline: 32px;
-}
-
-.nav1, .nav2 {
- display: flex;
- justify-content: space-between; 
-}
-
-.nav1 {
+#primary {
   padding-block: 20px;
+
+  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* nesting CSS */
+  div:nth-child(2) {
+    margin-inline: auto;
+  }
+
+  div:nth-child(3) {
+    justify-self: end;
+  }
 }
 
-.nav2 {
+#secundary {
   padding-block: 14px;
-  border-block: 1px solid var(--stroke-color);
+  border: 1px solid var(--stroke-color);
+  border-inline: none;
+  justify-content: space-between;
 }

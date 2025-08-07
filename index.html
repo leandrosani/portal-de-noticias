@@ -7,98 +7,143 @@
   <link rel="stylesheet" href="./style/index.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech News</title>
+  <title>Portal de notícias</title>
 </head>
 <body>
   <header class="container">
-     <nav>
-      <div class="nav1">
+    <nav id="primary" class="grid grid-flow-cow">
         <div>
-          <img src="./assets/icons/List.svg" alt="menu">
+          <img src="assets/icons/List.svg" alt="icone menu">
           <strong>Menu</strong>
         </div>
-        <img src="./assets/logo.png" alt="">
+
+        <div>
+          <img src="assets/logo.png" alt="LOGO">
+        </div>
+
         <div>
           <strong>Buscar</strong>
-          <img src="./assets/icons/MagnifyingGlass.svg" alt="">
+          <img src="assets/icons/MagnifyingGlass.svg" alt="buscar">
         </div>
-      </div>
-      <div class="nav2">
-        <a href="#">Inteligência Artificial</a>
-        <a href="#">Blockchain</a>
-        <a href="#">Hologramas</a>
-        <a href="#">Internet</a>
-        <a href="#">Vestíveis</a>
-        <a href="#">Realidade Aumentada</a>
-        <a href="#">Realidade  Virtual</a>
-      </div>
-     </nav>
-</header>
+    </nav>
 
-  <main class="container">
-    <section id="section1">
-      <div>
+    <nav id="secundary" class="grid grid-flow-cow">
+      <a href="#">Inteligência Artificial</a>
+      <a href="#">Hologramas</a>
+      <a href="#">Internet</a>
+      <a href="#">Vestíveis</a>
+      <a href="#">Realidade Aumentada</a>
+      <a href="#">Realidade  Virtual</a>
+    </nav>
+  </header>
+
+  <main class="grid container">
+    <section id="featured" class="grid grid-flow-cow gap-16">
+      <figure class="card">
+        <img src="./assets/image/Image 01.png" alt="imagem 1">
+
+        <figcaption>
+          <span class="content-tag">robótica</span>
+          <h2 class="text-2xl">
+            Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.
+          </h2>
+        </figcaption>
+      </figure>
+
+      <div class="grid grid-cols-2 gap-16">
         <figure class="card">
-          <img src="./assets/image/Image 01.png" alt="imagem">
+          <img src="./assets/image/Image 02.png" alt="imagem 2">
+          
           <figcaption>
-            <span class="tittle">robótica</span>
-            <h2>
-              Robôs domésticos começam a ser adotados para tarefas diárias, prometendo mais conforto e eficiência nas residências.
+            <span class="content-tag">Hologramas</span>
+            <h2 class="text-lg">
+              Novo Smartphone Projetor 3D chega ao mercado, transformando a forma como vemos nossas telas!
             </h2>
           </figcaption>
         </figure>
-      </div>
-      <div>
-        <div>
-          <img src="./assets/image/Image 02.png" alt="imagem">
-        </div>
-        <div>
-          <img src="./assets/image/Image 03.png" alt="imagem">
-        </div>
-        <div>
-          <img src="./assets/image/Image 04.png" alt="imagem">
-        </div>
-        <div>
-          <img src="./assets/image/Image 05.png" alt="imagem">
-        </div>
+
+        <figure class="card">
+          <img src="./assets/image/Image 03.png" alt="imagem 3">
+
+          <figcaption>
+            <span class="content-tag">Internet</span>
+            <h2 class="text-lg">
+              Tecnologia 6G chega às metrópoles brasileiras, prometendo revolucionar a forma como vivemos e nos comuni...
+            </h2>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="./assets/image/Image 04.png" alt="imagem 4">
+
+          <figcaption>
+            <span class="content-tag">Vestíveis</span>
+            <h2 class="text-lg">
+              Empresa lança relógio inteligente capaz de monitorar a saúde mental, oferecendo insights valiosos para o...
+            </h2>
+          </figcaption>
+        </figure>
+
+        <figure class="card">
+          <img src="./assets/image/Image 05.png" alt="imagem 5">
+
+          <figcaption>
+            <span class="content-tag">Realidade Virtual</span>
+            <h2 class="text-lg">
+              Escolas adotam a tecnologia VR para proporcionar experiências imersivas, transformando a aprendizagem trad...
+            </h2>
+          </figcaption>
+        </figure>
+
+
       </div>
     </section>
-    <section id="section2">
-      <div class="header-section2">
-        <a>Mais lidas da semana</a>
-        <a>
-          Ver tudo 
-          <img src="./assets/icons/ArrowRight.svg" alt="seta para direita">
+
+    <section id="weekly">
+      <header class="grid grid-flow-cow">
+        <h3>Mais lidas da semana</h3>
+        <a href="#" class="grid grid-flow-cow">
+          <strong>Ver tudo</strong>
+          <span></span>
         </a>
+      </header>
+
+      <div class="grid gap-16">
+        <figure>
+          <span class="content-tag">veículos</span>
+          <img src="./assets/image/Image 06.png" alt="">
+          <p>
+            Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoa...
+          </p>
+        </figure>
+
+        <figure>
+          <span class="content-tag">Hologramas</span>
+          <img src="./assets/image/Image 07.png" alt="">
+          <p>
+            Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamada...
+          </p>
+        </figure>
+
+        <figure>
+          <span class="content-tag">Realidade</span>
+          <img src="./assets/image/Image 08.png" alt="">
+          <p>
+            Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiên...
+          </p>
+        </figure>
+
+        <figure>
+          <span class="content-tag">Internet</span>
+          <img src="./assets/image/Image 09.png" alt="">
+          <p>
+            Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites. 
+          </p>
+        </figure>
       </div>
-        <div class="news">
-            <div>
-              <img src="./assets/image/Image 06.png" alt="img 6">
-              <h2>
-                Protótipo de veículo voador é apresentado, marcando o início da era dos transportes aéreos pessoais...
-              </h2>
-            </div>
-            <div>
-              <img src="./assets/image/Image 07.png" alt="img 7">
-              <h2>
-                Plataforma de videoconferência apresenta nova função de hologramas, tornando as chamadas virtuais mais realistas e envolventes....
-              </h2>
-            </div>
-            <div>
-              <img src="./assets/image/Image 08.png" alt="img 8">
-              <h2>
-                Nova geração de consoles de videogame é lançada, trazendo gráficos ultra-realistas e experiências de jogo totalmente envolventes....
-              </h2>
-            </div>
-            <div>
-              <span>veículos</span>
-              <img src="./assets/image/Image 09.png" alt="img 9">
-              <h2>
-                Projeto busca oferecer internet de alta velocidade em áreas remotas através de satélites...
-              </h2>
-            </div>
-        </div>
+
     </section>
+
   </main>
 </body>
 </html>
