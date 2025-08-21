@@ -23,3 +23,27 @@
   border-inline: none;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 430px) {
+  
+  #primary {
+    padding-block: 16px;
+
+    
+    div.logo {
+      img {
+        width: 100px;
+      }
+    }
+
+    /* nesting CSS */
+    div:nth-child(2) {
+      margin-inline: auto;
+    }
+
+    div:nth-child(3) {
+      justify-self: end;
+    }
+  }
+
+}

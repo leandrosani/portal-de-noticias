@@ -109,10 +109,69 @@ aside {
 
 #more {
 
-
   img {
     width: 72px;
     aspect-ratio: 1/1;
     object-fit: cover;
   }
+
+  & h3 {
+    margin-top: 8px;
+  }
+}
+
+
+@media screen and (max-width: 430px) {
+
+  main {
+    margin: 16px;
+  }
+  
+  #featured, 
+  #weekly {
+    grid-auto-flow: row;
+    width: 100%;
+
+    & img {
+      height: 26rem;
+      width: 100%;
+    }
+
+    & .cards {
+      grid-template-columns: 1fr;
+
+      & img {
+        height: 12.5rem;
+      }
+    }
+  }
+  
+  #weekly .cards figure img {
+      height: 10rem;
+      object-fit: cover;
+    }
+
+
+    /*Section Ai*/
+  #ai {
+    
+    & article {
+      display: flex;
+      flex-direction: row-reverse;
+      
+      & .flex-2 {
+        flex: 2;
+      }
+
+      & .flex-1 {
+        flex: 1;
+      }
+    }
+  }
+
+  /*ADS*/
+  #ads {
+    margin-bottom: 32px;
+  }
+
 }
